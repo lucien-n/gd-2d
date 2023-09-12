@@ -11,7 +11,7 @@ script = ExtResource("1_r727v")
 [node name="player" parent="." instance=ExtResource("1_bjnxc")]
 z_index = 50
 
-[node name="world generator" parent="." instance=ExtResource("2_b7o6w")]
-world_size = 8192
+[node name="world generator" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_b7o6w")]
+player = NodePath("../player")
 
 [node name="interface" parent="." instance=ExtResource("3_dtey2")]
