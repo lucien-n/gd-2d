@@ -1,0 +1,60 @@
+[gd_scene load_steps=19 format=3 uid="uid://bx14dxmvtsd0w"]
+
+[ext_resource type="Script" path="res://scripts/world_generator.gd" id="1_asyn0"]
+[ext_resource type="Texture2D" uid="uid://ddxnvl6u42r54" path="res://assets/textures/tiles/deep_water.png" id="2_uoqty"]
+[ext_resource type="Texture2D" uid="uid://csxpv1ksijieo" path="res://assets/textures/tiles/grass.png" id="3_22ako"]
+[ext_resource type="Texture2D" uid="uid://6tt4bvaq11kw" path="res://assets/textures/tiles/sand.png" id="4_rolvt"]
+[ext_resource type="Texture2D" uid="uid://bmcn77iyh65ps" path="res://assets/textures/tiles/shallow_water.png" id="5_83l46"]
+[ext_resource type="Texture2D" uid="uid://bvdnusrthfxy4" path="res://assets/textures/tiles/lush_grass.png" id="5_khd1p"]
+[ext_resource type="Texture2D" uid="uid://bt8q2w5cpkm60" path="res://assets/textures/tiles/stone.png" id="6_nttos"]
+[ext_resource type="Texture2D" uid="uid://dqihh6hq3xvny" path="res://assets/textures/tiles/cold_grass.png" id="7_evicu"]
+[ext_resource type="Texture2D" uid="uid://bd4brjvr33cxd" path="res://assets/textures/tiles/snow.png" id="9_m2dlq"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aejuw"]
+texture = ExtResource("2_uoqty")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bavky"]
+texture = ExtResource("5_83l46")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aicd8"]
+texture = ExtResource("4_rolvt")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dc6d5"]
+texture = ExtResource("5_khd1p")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_irewi"]
+texture = ExtResource("3_22ako")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ek8c"]
+texture = ExtResource("7_evicu")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lbd80"]
+texture = ExtResource("6_nttos")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_toi4p"]
+texture = ExtResource("9_m2dlq")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_oapcd"]
+sources/0 = SubResource("TileSetAtlasSource_aejuw")
+sources/2 = SubResource("TileSetAtlasSource_aicd8")
+sources/1 = SubResource("TileSetAtlasSource_bavky")
+sources/4 = SubResource("TileSetAtlasSource_irewi")
+sources/3 = SubResource("TileSetAtlasSource_dc6d5")
+sources/5 = SubResource("TileSetAtlasSource_1ek8c")
+sources/6 = SubResource("TileSetAtlasSource_lbd80")
+sources/7 = SubResource("TileSetAtlasSource_toi4p")
+
+[node name="world generator" type="Node2D"]
+script = ExtResource("1_asyn0")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_oapcd")
+format = 2

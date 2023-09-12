@@ -1,0 +1,35 @@
+[gd_resource type="Theme" load_steps=13 format=3 uid="uid://ctx46pgbjlxib"]
+
+[ext_resource type="Texture2D" uid="uid://c28rwp16m468e" path="res://assets/textures/ui/button_selected.png" id="1_2yqar"]
+[ext_resource type="Texture2D" uid="uid://dd52v4gyx6q30" path="res://assets/textures/ui/button_outline.png" id="2_vqcyy"]
+[ext_resource type="Texture2D" uid="uid://cs41at2jkkfjk" path="res://assets/textures/ui/button.png" id="3_p8awi"]
+[ext_resource type="Texture2D" uid="uid://pys2oaa0secd" path="res://assets/textures/ui/check/checked.png" id="4_te77r"]
+[ext_resource type="Texture2D" uid="uid://ctaowrty02d3l" path="res://assets/textures/ui/check/checked_mirrored.png" id="5_17oya"]
+[ext_resource type="Texture2D" uid="uid://baald3mjk33n6" path="res://assets/textures/ui/check/unchecked.png" id="6_4bqfa"]
+[ext_resource type="Texture2D" uid="uid://dtl23wvgntwjp" path="res://assets/textures/ui/check/unchecked_mirrored.png" id="7_m44vi"]
+[ext_resource type="FontFile" uid="uid://bs7us782pbwm6" path="res://assets/fonts/reemkufi.ttf" id="8_4ax5h"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0fymo"]
+texture = ExtResource("1_2yqar")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mlflf"]
+texture = ExtResource("2_vqcyy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ee4kv"]
+texture = ExtResource("3_p8awi")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3qr8v"]
+texture = ExtResource("1_2yqar")
+
+[resource]
+default_font = ExtResource("8_4ax5h")
+default_font_size = 18
+Button/styles/disabled = SubResource("StyleBoxTexture_0fymo")
+Button/styles/hover = SubResource("StyleBoxTexture_mlflf")
+Button/styles/normal = SubResource("StyleBoxTexture_ee4kv")
+Button/styles/pressed = SubResource("StyleBoxTexture_3qr8v")
+CheckButton/icons/checked = ExtResource("4_te77r")
+CheckButton/icons/checked_mirrored = ExtResource("5_17oya")
+CheckButton/icons/unchecked = ExtResource("6_4bqfa")
+CheckButton/icons/unchecked_mirrored = ExtResource("7_m44vi")
+Label/font_sizes/font_size = 24
