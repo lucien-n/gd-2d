@@ -2,7 +2,7 @@ extends Node2D
 
 @export var tile_size: int = 16
 @export var chunk_size: int = 16
-@export var world_size: int = 4_196
+@export var world_size: int = 4196
 
 var player: CharacterBody2D
 var player_current_chunk: Vector2 = Vector2.ZERO

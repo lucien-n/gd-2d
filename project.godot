@@ -12,7 +12,7 @@ config_version=5
 
 config/name="D:"
 run/main_scene="res://scenes/game.tscn"
-config/features=PackedStringArray("4.1", "Forward Plus")
+config/features=PackedStringArray("4.1", "C#", "Forward Plus")
 boot_splash/bg_color=Color(0.14902, 0.137255, 0.137255, 1)
 config/icon="res://icon.svg"
 
@@ -24,10 +24,11 @@ window/size/resizable=false
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 window/stretch/scale=2.0
+window/vsync/vsync_mode=0
 
 [dotnet]
 
-project/assembly_name="D-"
+project/assembly_name="gd-2d"
 
 [gui]
 
