@@ -27,7 +27,6 @@ window/size/viewport_height=720
 window/size/resizable=false
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
-window/stretch/scale=2.0
 window/vsync/vsync_mode=0
 
 [dotnet]
@@ -86,7 +85,6 @@ right={
 
 [rendering]
 
-driver/threads/thread_model=2
 environment/defaults/default_clear_color=Color(0, 0.623529, 0.74902, 1)
 2d/snap/snap_2d_transforms_to_pixel=true
 2d/snap/snap_2d_vertices_to_pixel=true
