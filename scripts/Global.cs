@@ -3,7 +3,7 @@ using Godot;
 public partial class Global : Node
 {
     [Export]
-    public static bool DEV = false;
+    public static bool DEV = true;
 
     [Export]
     public static int TILE_SIZE = 16;

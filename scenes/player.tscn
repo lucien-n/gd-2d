@@ -13,6 +13,7 @@ script = ExtResource("1_sd5kj")
 shape = SubResource("RectangleShape2D_k7l5n")
 
 [node name="camera" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
 editor_draw_drag_margin = true
 
 [node name="sprite" type="Sprite2D" parent="."]
