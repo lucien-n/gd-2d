@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5a3jnn314ggt"]
+
+[ext_resource type="Script" path="res://scripts/Ui.cs" id="1_6dv83"]
+[ext_resource type="Theme" uid="uid://ctx46pgbjlxib" path="res://assets/themes/theme.tres" id="1_v3ebh"]
+
+[node name="ui" type="CanvasLayer"]
+script = ExtResource("1_6dv83")
+
+[node name="debug" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+theme = ExtResource("1_v3ebh")
+
+[node name="fps" type="Label" parent="debug"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 144.0
+offset_bottom = 48.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+text = "TEST"

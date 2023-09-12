@@ -1,17 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://xmh2flhltepk"]
+[gd_scene load_steps=6 format=3 uid="uid://xmh2flhltepk"]
 
+[ext_resource type="Script" path="res://scripts/Game.cs" id="1_7xydn"]
 [ext_resource type="PackedScene" uid="uid://dkyg64tshww81" path="res://scenes/player.tscn" id="1_bjnxc"]
-[ext_resource type="Script" path="res://scripts/game.gd" id="1_r727v"]
 [ext_resource type="PackedScene" uid="uid://bx14dxmvtsd0w" path="res://scenes/world_generator.tscn" id="2_b7o6w"]
-[ext_resource type="PackedScene" uid="uid://c5a3jnn314ggt" path="res://scenes/interface.tscn" id="3_dtey2"]
+[ext_resource type="PackedScene" uid="uid://c5a3jnn314ggt" path="res://scenes/ui.tscn" id="3_dtey2"]
+[ext_resource type="Script" path="res://scripts/Player.cs" id="3_jaxcq"]
 
 [node name="Game" type="Node2D"]
-script = ExtResource("1_r727v")
+script = ExtResource("1_7xydn")
 
 [node name="player" parent="." instance=ExtResource("1_bjnxc")]
 z_index = 50
+script = ExtResource("3_jaxcq")
+max_speed = 50
+acceleration = 800
+friction = 400
 
 [node name="world generator" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_b7o6w")]
 player = NodePath("../player")
 
-[node name="interface" parent="." instance=ExtResource("3_dtey2")]
+[node name="ui" parent="." instance=ExtResource("3_dtey2")]

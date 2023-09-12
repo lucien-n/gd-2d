@@ -2,9 +2,15 @@ using Godot;
 
 public partial class Global : Node
 {
-    public const int TILE_SIZE = 16;
-    public const int CHUNK_SIZE = 16;
-    public const int RENDER_DISTANCE = 3;
+    [Export]
+    public static bool DEV = false;
+
+    [Export]
+    public static int TILE_SIZE = 16;
+    [Export]
+    public static int CHUNK_SIZE = 16;
+    [Export]
+    public static int RENDER_DISTANCE = 3;
 
 
     public static bool IsBetween(float value, float min_value, float max_value)

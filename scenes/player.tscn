@@ -9,11 +9,11 @@ size = Vector2(16, 16)
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_sd5kj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="collision_shape" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_k7l5n")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="camera" type="Camera2D" parent="."]
 editor_draw_drag_margin = true
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="sprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_velec")
